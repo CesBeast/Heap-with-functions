@@ -1,0 +1,123 @@
+Creating new heap with no set size
+ 
+Checking if Heap is Empty...
+Heap is Empty
+ 
+Checking what Max is on Empty Array...
+HeapException: Heap is Empty, unable to return value.
+	at MaxIntHeap.max(MaxIntHeap.java:106)
+	at HeapTest.main(HeapTest.java:18)
+ 
+Removing max from empty array...
+HeapException: Heap is Empty, unable to remove value.
+	at MaxIntHeap.removeMax(MaxIntHeap.java:92)
+	at HeapTest.main(HeapTest.java:25)
+ 
+Added 15 values to array.
+ 
+Checking if heap is Empty
+Heap is NOT Empty
+ 
+18
+8
+16
+2
+6
+10
+14
+-4
+-2
+-8
+4
+-10
+0
+-6
+12
+Size of array is currently 15
+ 
+Adding 6 more values to array...
+HeapException: Heap is Full, no more values will be entered.
+	at MaxIntHeap.heapInsert(MaxIntHeap.java:75)
+	at HeapTest.main(HeapTest.java:67)
+ 
+Size of array is currently 20
+ 
+Checking what Max is in Array...
+Max Value of array is 40
+ 
+40
+18
+16
+10
+7
+10
+14
+2
+8
+6
+4
+-10
+0
+-6
+12
+-4
+-20
+-2
+0
+-8
+ 
+Removing max from array...
+18
+10
+16
+8
+7
+10
+14
+2
+0
+6
+4
+-10
+0
+-6
+12
+-4
+-20
+-2
+-8
+ 
+Creating 3 new heaps with 0,-4, and 5 in parameter
+Cant have size of array less than or equal to 0, size set to default 20.
+Cant have size of array less than or equal to 0, size set to default 20.
+ 
+Added 5 values to 3rd heap.
+8
+6
+2
+-10
+4
+ 
+Modifying heap by adding the value 5 to index 0
+HeapException: Your are inserting into root of heap. Not Permitted
+	at MaxIntHeap.modifyHeap(MaxIntHeap.java:114)
+	at HeapTest.main(HeapTest.java:104)
+ 
+Modifying heap by adding the value 10 to last index
+HeapException: Your are inserting into the last index of heap. Not Permitted
+	at MaxIntHeap.modifyHeap(MaxIntHeap.java:116)
+	at HeapTest.main(HeapTest.java:111)
+ 
+Modifying heap by adding the value 20 to index 2
+20
+6
+8
+-10
+4
+ 
+Modifying heap by adding the value -50 to index 1
+20
+4
+8
+-10
+-50
